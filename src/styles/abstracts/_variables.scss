@@ -1,0 +1,19 @@
+//  *** Sass Variables ***
+
+//default vuetify theme colors (some already modified for project design)
+$primary: #42A5F5;
+$secondary: #B71C1C;
+$accent: #9e9e9e;
+$error: #FF0000;
+$info: #6A1B9A;
+$success: #4CAF50;
+$warning: #FFC107;
+
+//supplementary base colors
+$black: rgba(0, 0, 0, 0.87);
+$white: #FFF;
+$page-bg-grey: #EFF0F1;
+$divider-grey: #e8e8e8;
+$border_table_color_grey_light: #dfdfdf;
+$table_header_bg_color: #f2f2f2;
+$table_hover_bg_color: $table_header_bg_color;
