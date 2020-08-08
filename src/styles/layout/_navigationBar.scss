@@ -15,26 +15,45 @@ nav {
     }
   }
 
+  .navigation-list-item {
+    margin: 10px 0 10px 0;
+  }
+
+  .v-list-item-group .v-list-item--active {
+    border-left: solid 2px;
+  }
+
   .v-list-item__icon {
-    margin-right: 1rem !important;
+    margin: 10px 10px 0 12px !important;
   }
 
   .menu-items-text {
-    font-size: 1.2rem !important;
+    text-transform: capitalize;
+    font-size: 13px !important;
   }
 
   .v-footer {
-    color: $white;
-    font-size: 9px;
-    background-color: transparent;
-    padding: 5px;
+    margin: 0 0 40px 10px;
+    .dstv-logo {
+      min-height: 15px;
+      box-shadow: 0 0 9px 0 rgba(0, 0, 0, .3);
+      border-radius: 23%;
+      overflow: hidden;
+      margin-right: 7px;
+      .v-image {
+        max-width: 25px;
+      }
+    }
+    .footer-text {
+      span{
+        font-size: 10px;
+        display: block;
 
-    a,
-    a:hover,
-    a:visited,
-    a:active {
-      text-decoration: none;
-      color: $white;
+      }
+      span:last-child{
+        font-size: 7px;
+        display: block;
+      }
     }
   }
 }
