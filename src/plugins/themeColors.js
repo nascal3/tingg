@@ -6,7 +6,7 @@ export default {
     warning: '#FFC107',
     error: '#FF0000',
     success: '#4CAF50',
-    accent: '#9e9e9e'
+    accent: '#78909C'
   },
   dark: {
     primary: '#42A5F5'

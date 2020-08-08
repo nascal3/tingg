@@ -1,14 +1,43 @@
 <template>
-  <v-app-bar height="55px" flat app>
+  <v-app-bar height="60px" flat app>
+    <v-text-field
+      class="toolbar-search-field"
+      label="Search for contact lists/groups"
+      prepend-inner-icon="mdi-magnify"
+      placeholder="Search for contact lists/groups"
+      solo
+      dense
+      flat
+    ></v-text-field>
     <v-spacer></v-spacer>
-    <template>
-      <v-row align="center" justify="end" no-gutters>
-        <div class="user d-flex flex-column justify-end">
-          <div class="user-name">name</div>
-          <div class="user-role">role</div>
-        </div>
-      </v-row>
-    </template>
+    <section id="notifications-badge" class="toolbar-notifications">
+      <div>
+        <v-badge
+          bordered
+          color="error"
+          content="1"
+          overlap
+        >
+          <v-icon>mdi-bell</v-icon>
+        </v-badge>
+      </div>
+      <div>
+        <v-badge
+          bordered
+          color="error"
+          content="1"
+          overlap
+        >
+          <v-icon>mdi-message</v-icon>
+        </v-badge>
+      </div>
+      <div>
+        <span>Log Out</span>
+        <span class="power-circle">
+          <v-icon>mdi-power</v-icon>
+        </span>
+      </div>
+    </section>
   </v-app-bar>
 </template>
 
@@ -18,6 +47,17 @@ export default {
 }
 </script>
 
+<style lang="scss" >
+  #notifications-badge {
+    .v-badge__badge {
+      border-radius: 2px;
+      font-size: 9px;
+      height: 15px;
+      min-width: 15px;
+      padding: 4px 4px;
+    }
+  }
+</style>
 <style lang="scss" scoped>
   @import 'src/styles/layout/toolBar';
 </style>
