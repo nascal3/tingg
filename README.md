@@ -1,4 +1,5 @@
-# tingg
+# Tingg dashboard
+Tingg UI user dashboard task
 
 ## Project setup
 ```
