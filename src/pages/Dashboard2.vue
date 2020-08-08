@@ -9,3 +9,7 @@ export default {
   name: 'Dashboard2'
 }
 </script>
+
+<style lang="scss" scoped>
+  @import "src/styles/layout/dashboard2";
+</style>
