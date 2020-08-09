@@ -7,7 +7,31 @@
   }
 
   .bottom-row-card {
-    min-height: 190px;
+    position: relative;
+    min-height: 335px;
+  }
+
+  .graph-title {
+    position: absolute;
+    display: inline-block;
+    left: 23%;
+    font-size: 12px;
+  }
+
+  .date-picker-button {
+    position: absolute;
+    right: 20px;
+    z-index: 1;
+    font-size: 12px;
+    border-radius: 10px;
+     .v-icon:last-child {
+       font-size: 24px;
+     }
+  }
+
+  .chart-wrapper {
+    display: block;
+    width: 100%;
   }
 
   .line-height {

@@ -84,7 +84,15 @@
       </v-col>
       <v-col md="9" cols="12">
         <v-card class="bottom-row-card">
-
+          <div class="graph-title blue--text">Total SMS sent per transaction</div>
+          <v-btn class="date-picker-button" depressed small>
+            <v-icon color="primary" left>mdi-calendar-range</v-icon>
+              Month
+            <v-icon right>keyboard_arrow_down</v-icon>
+          </v-btn>
+          <div class="char-wrapper">
+            <apexchart type="bar" height="280" :options="chartOptions" :series="series"></apexchart>
+          </div>
         </v-card>
       </v-col>
     </v-row>
@@ -93,7 +101,62 @@
 
 <script>
 export default {
-  name: 'Dashboard2'
+  name: 'Dashboard2',
+  data: () => ({
+    series: [{
+      name: 'Sent Messages',
+      data: [1300, 2300, 2000, 800, 1003, 2700, 1700, 1005, 1005, 2100, 5000, 2500, 1300]
+    }, {
+      name: 'Pending Messages',
+      data: [1100, 1700, 1005, 1005, 2100, 1400, 5000, 2500, 1300, 2020, 1005, 1005, 2100]
+    }, {
+      name: 'Failed Messages',
+      data: [2100, 5000, 2500, 1300, 2020, 2700, 2300, 2000, 800, 1003, 1005, 1005, 2100]
+    }],
+    chartOptions: {
+      chart: {
+        type: 'bar',
+        width: '100%',
+        height: '100%',
+        stacked: true,
+        toolbar: {
+          show: false
+        }
+      },
+      dataLabels: {
+        enabled: false
+      },
+      grid: {
+        strokeDashArray: 3
+      },
+      plotOptions: {
+        bar: {
+          horizontal: false
+        }
+      },
+      xaxis: {
+        categories: ['01 Jan', '24 Jan', '03 Feb', '14 Feb',
+          '05 Mar', '16 Mar', '09 Apr', '28 Apr', '09 May', '10 Jun', '19 Jun', '20 Aug', '30 Aug'
+        ]
+      },
+      title: {
+        text: 'REPORTS',
+        style: {
+          textTransform: 'uppercase',
+          fontSize: '12px'
+        }
+      },
+      colors: ['#4CAF50', '#FFC107', '#FF0000'],
+      legend: {
+        position: 'bottom',
+        horizontalAlign: 'left',
+        offsetY: 5,
+        markers: {
+          radius: 50
+        }
+      }
+    }
+  })
 }
 </script>
 
