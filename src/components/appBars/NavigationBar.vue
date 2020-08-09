@@ -51,7 +51,7 @@ export default {
     logo: require('@/assets/cellulant_logo.png'),
     dstvLogo: require('@/assets/dstv_logo.png'),
     pages: [
-      { title: 'Dashboard', icon: 'mdi-view-dashboard-outline', route: '/dashboard' },
+      { title: 'Dashboard', icon: 'mdi-view-dashboard-outline', route: '/' },
       { title: 'Messages', icon: 'mdi-email-open-outline', route: '/messages' },
       { title: 'Contacts', icon: 'mdi-account-multiple-outline', route: '/contacts' },
       { title: 'Accounts', icon: 'mdi-folder-outline', route: '/accounts' },

@@ -4,6 +4,10 @@
     <v-main>
       <v-container ma-0 pa-0 fluid>
         <router-view/>
+
+        <v-btn class="chat-button" fab dark small color="primary">
+          <v-icon>question_answer</v-icon>
+        </v-btn>
       </v-container>
     </v-main>
   </v-app>
