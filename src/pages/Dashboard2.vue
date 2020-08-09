@@ -6,6 +6,62 @@
     </div>
 
     <v-row>
+      <v-col md="3" cols="12">
+        <v-card class="top-row-card">
+          <div class="card-header-text-uppercase">Total Messages sent</div>
+          <div class="count-display d-flex align-center">
+            <span class="count-display-icon d-flex align-center justify-center info-color">
+              <v-icon>mdi-cursor-default-outline</v-icon>
+            </span>
+            <span class="count-display-number info-text">5,000</span>
+          </div>
+          <div class="card-text">
+            <span class="blue--text">See customers</span> that haven't been sent an invite
+          </div>
+        </v-card>
+      </v-col>
+      <v-col md="3" cols="12">
+        <v-card class="top-row-card">
+          <div class="card-header-text-uppercase">Delivered messages</div>
+          <div class="count-display d-flex align-center">
+            <span class="count-display-icon d-flex align-center justify-center success-color">
+              <v-icon>mdi-email-outline</v-icon>
+            </span>
+            <span class="count-display-number success-text">3,000</span>
+          </div>
+          <div class="card-text">
+            <span class="blue--text">See customers</span> that have received the message
+          </div>
+        </v-card>
+      </v-col>
+      <v-col md="3" cols="12">
+        <v-card class="top-row-card">
+          <div class="card-header-text-uppercase">Failed messages</div>
+          <div class="count-display d-flex align-center">
+            <span class="count-display-icon d-flex align-center justify-center error-color">
+              <v-icon>mdi-comment-text-outline</v-icon>
+            </span>
+            <span class="count-display-number error-text">1,400</span>
+          </div>
+          <div class="card-text">
+            <span class="blue--text">See all customers</span> that have not received the messages
+          </div>
+        </v-card>
+      </v-col>
+      <v-col md="3" cols="12">
+        <v-card class="top-row-card">
+          <div class="card-header-text-uppercase">pending messages</div>
+          <div class="count-display d-flex align-center">
+            <span class="count-display-icon d-flex align-center justify-center primary-color">
+              <v-icon>mdi-timer-outline</v-icon>
+            </span>
+            <span class="count-display-number primary-text">600</span>
+          </div>
+          <div class="card-text">
+            <span class="blue--text">See all messages</span> that pending to be send
+          </div>
+        </v-card>
+      </v-col>
     </v-row>
 
     <v-row>

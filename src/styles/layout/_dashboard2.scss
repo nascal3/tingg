@@ -3,34 +3,34 @@
   padding: 20px 30px 50px 30px;
 
   .top-row-card {
-    min-height: 360px;
+    min-height: 175px;
   }
 
   .bottom-row-card {
     min-height: 190px;
   }
 
-  .line-height {
-    line-height: 1.1;
-  }
+  .count-display {
+    margin-bottom: 10px;
+    &-icon {
+      width: 27px;
+      height: 25px;
+      border-radius: 5px;
+      padding: 5px;
+      margin-right: 10px;
 
-  .card-1-mage {
-    .v-image {
-      max-width: 550px;
+      .v-icon {
+        color: $white;
+        font-size: 15px;
+      }
+    }
+
+    &-number {
+      font-weight: 500;
+      font-size: 23px;
     }
   }
 
-  .card-2-mage {
-    .v-image {
-      max-width: 120px;
-    }
-  }
-
-  .card-3-mage {
-    .v-image {
-      max-width: 120px;
-    }
-  }
 
   .large-number {
     text-align: center;
