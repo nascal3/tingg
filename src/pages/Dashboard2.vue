@@ -52,10 +52,10 @@
         <v-card class="top-row-card">
           <div class="card-header-text-uppercase">pending messages</div>
           <div class="count-display d-flex align-center">
-            <span class="count-display-icon d-flex align-center justify-center primary-color">
+            <span class="count-display-icon d-flex align-center justify-center warning-color">
               <v-icon>mdi-timer-outline</v-icon>
             </span>
-            <span class="count-display-number primary-text">600</span>
+            <span class="count-display-number warning-text">600</span>
           </div>
           <div class="card-text">
             <span class="blue--text">See all messages</span> that pending to be send
@@ -65,6 +65,28 @@
     </v-row>
 
     <v-row>
+      <v-col md="3" cols="12">
+        <v-card class="bottom-row-card">
+          <div class="card-header-text-uppercase">credit balance</div>
+
+          <div class="d-flex flex-column align-center">
+            <div class="card-circled-icon d-flex align-center justify-center">
+              <v-icon>mdi-wallet-outline</v-icon>
+            </div>
+            <div class="card-text line-height">
+              <div class="large-number">200,000</div>
+              <div class="tiny-text">Available credit balance</div>
+            </div>
+            <v-btn depressed color="primary">buy bundles</v-btn>
+          </div>
+
+        </v-card>
+      </v-col>
+      <v-col md="9" cols="12">
+        <v-card class="bottom-row-card">
+
+        </v-card>
+      </v-col>
     </v-row>
   </section>
 </template>
