@@ -22,14 +22,7 @@
         </v-badge>
       </div>
       <div>
-        <v-badge
-          bordered
-          color="error"
-          content="1"
-          overlap
-        >
-          <v-icon>mdi-message</v-icon>
-        </v-badge>
+        <notification-pop/>
       </div>
       <div>
         <span>Log Out</span>
@@ -42,8 +35,13 @@
 </template>
 
 <script>
+import NotificationPop from '@/components/appBars/NotificationPop'
+
 export default {
-  name: 'ToolBar'
+  name: 'ToolBar',
+  components: {
+    NotificationPop
+  }
 }
 </script>
 
