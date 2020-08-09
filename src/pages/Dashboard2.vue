@@ -1,6 +1,15 @@
 <template>
-  <section class="about">
-    <h1>dashbord 2</h1>
+  <section class="dashboard2">
+    <div class="welcome-section">
+      <h2>Welcome Alice Wambui!</h2>
+      <span>Here is what has been happening in last 7 days.</span>
+    </div>
+
+    <v-row>
+    </v-row>
+
+    <v-row>
+    </v-row>
   </section>
 </template>
 
