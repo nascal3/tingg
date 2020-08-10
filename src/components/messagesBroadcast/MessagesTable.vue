@@ -9,8 +9,7 @@
     :header-props="{ sortIcon: null }"
     :footer-props="{itemsPerPageText: 'Show rows:'}"
   >
-    <template v-slot:item.id="
-      // eslint-disable-next-line vue/no-unused-vars{ item }">
+    <template v-slot:item.id="{ item }">
       <v-icon color="primary">mdi-drag-variant</v-icon>
     </template>
   </v-data-table>
