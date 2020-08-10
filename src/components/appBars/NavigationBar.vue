@@ -54,7 +54,7 @@ export default {
       { title: 'Dashboard', icon: 'mdi-view-dashboard-outline', route: '/' },
       { title: 'Messages', icon: 'mdi-email-open-outline', route: '/messages' },
       { title: 'Contacts', icon: 'mdi-account-multiple-outline', route: '/contacts' },
-      { title: 'Accounts', icon: 'mdi-folder-outline', route: '/accounts' },
+      { title: 'Accounts', icon: 'mdi-folder-outline', route: '/dashboard2' },
       { title: 'Credits', icon: 'mdi-wallet-outline', route: '/credits' },
       { title: 'Reports', icon: 'bar_chart', route: '/reports' },
       { title: 'Contact us', icon: 'alternate_email', route: '/contactus' }

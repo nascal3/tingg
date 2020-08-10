@@ -9,5 +9,6 @@ module.exports = {
         prependData: '@import "@/styles/abstracts/_variables.scss";'
       }
     }
-  }
+  },
+  publicPath: '/tingg/'
 }
