@@ -1,0 +1,100 @@
+
+#message-records-table {
+  .v-data-table__wrapper {
+    table {
+      thead{
+        tr {
+          border-radius: 5px;
+          th {
+            text-transform: capitalize;
+            font-size: 10px;
+            background-color: $table_header_bg_color;
+            padding: 14px 15px;
+            border: none;
+          }
+          th:first-child {
+            border-radius: 3px 0 0 3px;
+          }
+          th:nth-child(3),:nth-child(4) {
+            &:after {
+              content: '\f0dc';
+              font-family: FontAwesome;
+              font-weight: normal;
+              font-style: normal;
+              margin:0px 0px 0px 10px;
+              text-decoration:none;
+            }
+          }
+          th:last-child {
+            border-radius: 0 3px 3px 0;
+          }
+        }
+      }
+      tbody {
+        tr {
+          td {
+            border-bottom: solid 1px $table_header_bg_color;
+            border-top: solid 1px $table_header_bg_color;
+            font-size: 10px;
+          }
+          td:first-child {
+            border-left: solid 1px $table_header_bg_color;
+            border-radius: 3px 0 0 3px;
+          }
+          td:last-child {
+            border-right: solid 1px $table_header_bg_color;
+            border-radius: 0 3px 3px 0;
+            .v-icon {
+              cursor: pointer;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .v-data-footer {
+    font-size: 10px;
+
+    .v-input__control {
+      border-radius: 3px;
+      border: solid 1px $table_header_bg_color;
+    }
+
+    &__select {
+      .v-select {
+        margin: 13px 0 13px 15px;
+      }
+    }
+
+    &__pagination {
+      margin: 0 15px;
+    }
+
+    &__icons {
+      &-before{
+        border-radius: 3px 0 0 3px;
+        border: solid 1px $table_header_bg_color;
+        height: 24px;
+        width: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      &-after{
+        border-radius: 0 3px 3px 0;
+        border: solid 1px $table_header_bg_color;
+        height: 24px;
+        width: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .v-select__selection--comma {
+      margin-left: 15px;
+      font-size: 10px;
+    }
+  }
+}

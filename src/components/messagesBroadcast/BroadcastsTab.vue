@@ -69,12 +69,23 @@
         </v-card>
       </v-col>
     </v-row>
+
+    <v-row class="messages-info-table">
+      <v-col md="12" cols="12">
+        <messages-table />
+      </v-col>
+    </v-row>
   </section>
 </template>
 
 <script>
+import MessagesTable from '@/components/messagesBroadcast/MessagesTable'
+
 export default {
-  name: 'BroadcastsTab'
+  name: 'BroadcastsTab',
+  components: {
+    MessagesTable
+  }
 }
 </script>
 
