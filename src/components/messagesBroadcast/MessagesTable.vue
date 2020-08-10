@@ -5,7 +5,7 @@
     :headers="headers"
     :items="data"
     item-key="id"
-    :header-props="{ sortIcon: null }"
+    :header-props="{ 'sort-icon': null }"
     :footer-props="{itemsPerPageText: 'Show rows:'}"
   >
     <template v-slot:item.id="{ item }">
