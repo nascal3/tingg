@@ -8,8 +8,8 @@
     <v-menu
       transition="slide-y-transition"
       max-width="350"
+      absolute
       offset-y
-      bottom
     >
       <template v-slot:activator="{ on }">
         <v-icon icon v-on="on">mdi-message</v-icon>
@@ -44,7 +44,7 @@
 
 <script>
 export default {
-  name: 'NotificationPop',
+  name: 'MessagesPopUp',
   data: () => ({
     items: [
       { avatar: require('@/assets/john_doe.jpg') },
@@ -55,5 +55,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import 'src/styles/components/notificationPop';
+  @import 'src/styles/components/messagesPopUp';
 </style>

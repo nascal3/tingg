@@ -22,7 +22,7 @@
         </v-badge>
       </div>
       <div>
-        <notification-pop/>
+        <messages-pop-up/>
       </div>
       <div>
         <span>Log Out</span>
@@ -35,12 +35,12 @@
 </template>
 
 <script>
-import NotificationPop from '@/components/appBars/NotificationPop'
+import MessagesPopUp from '@/components/appBars/MessagesPopUp'
 
 export default {
   name: 'ToolBar',
   components: {
-    NotificationPop
+    MessagesPopUp
   }
 }
 </script>

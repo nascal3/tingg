@@ -1,0 +1,50 @@
+
+.messages {
+  padding: 20px 0 0 0;
+  position: relative;
+
+  .welcome-section {
+    margin-bottom: 20px;
+    margin-left: 30px;
+  }
+
+  .date-filter-button {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    text-transform: none;
+    font-size: 10px;
+    background-color: $white !important;
+    border: solid 1px $light-grey2;
+    span {
+      margin-left: 5px;
+      color: $light-grey;
+    }
+  }
+
+  .content-section {
+    padding: 10px 20px 0 20px;
+    background-color: $white;
+    width: 100%;
+    height: 100vh;
+
+    .messages {
+      &-container {
+        &-tabs {
+          margin-left: 35px;
+          width: 80%;
+          .v-tab {
+            text-transform: capitalize;
+            font-weight: 500;
+            font-size: 12px;
+            height: 50px;
+          }
+        }
+
+        .v-tabs-items {
+          width: 80%;
+        }
+      }
+    }
+  }
+}
