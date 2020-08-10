@@ -5,7 +5,6 @@
     :headers="headers"
     :items="data"
     item-key="id"
-    :sort-icon="false"
     :header-props="{ sortIcon: null }"
     :footer-props="{itemsPerPageText: 'Show rows:'}"
   >
